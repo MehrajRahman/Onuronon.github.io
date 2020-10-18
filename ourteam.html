@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Team || Onuronon</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lora:ital,wght@0,500;0,700;1,500;1,700&family=Montserrat:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/toplogo1.png" />
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <!---- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="./parallax.min.js"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <style>
+        body{
+            background: #f2f2f2;
+        }
+        .team{
+            height: 150px;
+            background: #022333;
+            background-position: center;
+            background-size: cover;
+            padding: 30px 0 0 0;
+        }
+          .team-grid{
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr;
+        }
+      
+        
+        .team h1{
+            width: 80vw;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2rem;
+            text-align: center;
+            
+            color: #f2f2f2;
+            margin: auto;
+        }
+
+        .box{
+            width: 250px;
+            background: #000;
+            height: 450px;
+            margin: 10px auto;
+            border: 1px solid #fff;
+            transition: .5s all ease;
+        }
+            
+        .box img{
+            display: block;
+            margin:  auto;
+            padding: 10px 0 0 0;
+        }
+        .box h3
+        {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding: 15px 20px 05px 20px;
+        }
+        .box h4{
+            color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:16px;
+            font-weight: 400;
+            text-align: center;
+            padding-bottom: 08px;
+            font-family: "Cormorant", sans-serif;
+        }
+        .box p{
+            color: rgb(85, 83, 83);
+            text-align: center;
+            font-weight: 100;
+        } 
+
+        .box .mail{
+            color: rgb(155, 151, 151);
+        }
+        .box h4:hover{
+            color: rgb(218, 212, 212);
+            
+        }
+        .box:hover{
+             box-shadow: 5px 5px 5px #111;
+             cursor: pointer;
+        }
+        .box a{
+            display: block;
+            width: 80px;
+            margin: .5rem auto;
+        }
+        .contact-btn{
+            text-transform: capitalize;
+            text-decoration: none;
+            color: #f2f2f2;
+            border: 1px solid #022333;
+            padding: 05px 30px;
+            text-align: center;
+            overflow: hidden;
+            transition: 1s all ease;
+        }
+        .contact-btn:hover{
+            background: #f2f2f2;
+            color: #111;
+        }
+        
+ .sm{
+     height: 40px;
+ }   
+.sm a{
+    display: inline-block;
+    text-align: center;
+    margin: 5px 4px;
+    padding: 5px 8px;
+    width: 30px;
+    line-height: 20px;
+    border-radius: 05px;
+    color: #2c3e50;
+    font-size: 14px;
+    transition: .4s;
+}
+.sm a i{
+    display:inline-block;
+    margin: auto;
+
+}
+.sm a:hover{
+    background: #2c3e50;
+    color: white;
+}/*
+        .box-img{
+            display: block;
+            width: 550px;
+            margin: 10px auto 0 130px;
+        }
+        .box-img img{
+            display:block;
+            margin: auto;
+            background: #f2f2f2;
+        }*/
+        @media only screen and ( min-width: 1000px ){
+            .team-grid{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr ;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+        
+      
+       
+        }
+        @media only screen and ( min-width: 1400px ){
+              .team-grid{
+            display: grid;
+            
+            grid-template-columns: 1fr 1fr 1fr 1fr  ;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+        
+        .team-grid .box:nth-child(1){
+            grid-column-start: 1;
+            grid-column-end: 3;
+            
+        }
+         .team-grid .box:nth-child(2){
+            grid-column-start: 3;
+            grid-column-end: 5;
+        }
+         .team-grid .box:nth-child(3){
+            grid-row-start: 2;
+            grid-column-start: 1;
+            grid-column-end:2;
+        }
+         .team-grid .box:nth-child(4){
+             grid-row-start: 2;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+         .team-grid .box:nth-child(5){
+             grid-row-start: 2;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+         .team-grid .box:nth-child(6){
+             grid-row-start: 3;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+         .team-grid .box:nth-child(7){
+             grid-row-start: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+         .team-grid .box:nth-child(8){
+             grid-row-start: 3;
+            grid-column-start: 4;
+            grid-column-end: 5;
+        }
+        }
+
+       
+       
+/* Display the columns below each other instead of side by side on small screens */
+ 
+    </style>
+  </head>
+  <body>
+    <header class="parallax" data-parallax="scroll" data-image-src="./img/LOGO.jpg">
+        <nav>
+            <img src="./img/toplogo1.png" alt="" />
+            <div class="container" onclick="myFunction(this)">
+                <div id="myDIV1" class="bar1"></div>
+                <div id="myDIV2" class="bar2"></div>
+                <div id="myDIV3" class="bar3"></div>
+            </div>
+        </nav>
+        <div id="disp_sidenav" class="sidenav">
+            <div class="sidenav_container" onclick="hideFunction(this)">
+                <div id="myDIV4" class="bar4"></div>
+                <div class="bar5"></div>
+                <div id="myDIV6" class="bar6"></div>
+            </div>
+            <img src="./img/toplogo2.png" alt="" />
+            <ul>
+                <li><a href="./index.html"> &#127968 Home</a></li>
+                <li><a href="#">&#128222 Contact us</a></li>
+                <li><a href="./about.html">&#127919 About</a></li>
+                <li><a href="#">&#10035 Home</a></li>
+                <li><a href="#">&#9732 Home</a></li>
+            </ul>
+        </div>
+        <div id="left-side-disp" onclick="hideFunction(this)" class="drk_back"></div>
+    
+    </header>
+
+    <!--OUR TEAM PART STARTS 
+        
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        .
+        ..
+
+        ..  
+        FROM HERE.-->
+    <main>
+        <div class="team">
+            <h1>Excecutive Panel - 2020</h1>
+        </div>
+        <div class="team-grid">
+            <div class="president box">
+                <img height="200px"
+                src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus</p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="mailto:rahmanmehraj627@gmail.com">Contact</a>
+            </div>
+            <div class="general-sec box">
+                <img height="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus
+                </p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+            
+            <div class="vp-admin box">
+                
+                <img height="200px"
+                src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus</p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                  
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+            <div class="vp-event box">
+                
+                <img height="200px"
+                src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus</p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+            <div class="vp-communication box">
+                
+                <img height="200px"
+                src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus</p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+            <div class="vp-it box">
+                
+                <img height="200px"
+                src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus</p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+           <div class="vp-hr box">
+            
+                <img width="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus
+                </p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+            <div class="vp-hr box">
+                
+                <img height="200px"
+                src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Founder & President</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate voluptatibus</p>
+                <div class="sm">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                  </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+
+            <!--Secretary Of Onuronon-->
+            <div class="vp-hr box">
+            
+                <img height="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Secretary of Own category</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate
+                    voluptatibus</p>
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div><div class="vp-hr box">
+            
+                <img height="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Secretary of Own category</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate
+                    voluptatibus</p>
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div><div class="vp-hr box">
+            
+                <img height="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Secretary of Own category</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate
+                    voluptatibus</p>
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div><div class="vp-hr box">
+            
+                <img height="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Secretary of Own category</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate
+                    voluptatibus</p>
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div><div class="vp-hr box">
+            
+                <img height="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Secretary of Own category</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate
+                    voluptatibus</p>
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+            <div class="vp-hr box">
+            
+                <img height="200px" src="./img/team-photo/IMG_3193.JPG" alt="">
+                <h3>MD.Mahamudur Rahman Mehraj</h3>
+                <h4>Secretary of Own category</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error distinctio excepturi autem, voluptate
+                    voluptatibus</p>
+                    <div class="sm">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                      </div>
+                <p class="mail">rahmanmehraj627@gmail.com</p>
+                <a class="contact-btn" href="#">Contact</a>
+            </div>
+            <!--
+                <div class="box middle">
+                <div class="front">
+                  <img height="200px" src="/img/team-photo/IMG_3193.JPG" alt="">
+                </div>
+                <div class="back">
+                  <div class="back-content middle">
+                    <h2>Darkcode</h2>
+                    <span>Youtube Channel</span>
+                    <div class="sm">
+                      <a href="#"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a>
+                      <a href="#"><i class="fab fa-youtube"></i></a>
+                      <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                  </div>
+          
+                </div>
+           
+        </div>
+        -->
+
+
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <img width="150px" src="./img/toplogo2.png" alt="">
+            <p>Onuronon, A youth organisation works for building a skilled generations. </p>
+        </div>
+        <div class="footer-map">
+    
+            <p>Quick links</p>
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Our team </a></li>
+            </ul>
+        </div>
+        <div class="footer-down">
+            <img width="70px" src="./img/fbo.ico" alt="">
+            <img width="70px" src="./img/twt.ico" alt="">
+            <img width="70px" src="./img/ytb.ico" alt="">
+        </div>
+        <div class="copy">
+            <p>copyright &#169; <span>ONURONON</span></p>
+        </div>
+    
+    </footer>
+
+
+    <script src="./app.js"></script>
+  </body>
+</html>
